@@ -25,5 +25,4 @@ def index():
                                js_url=js_url)
 
 if __name__ == '__main__':
-    app.debug = True
-    app.run()
+    app.run(debug=True, port=33507)
