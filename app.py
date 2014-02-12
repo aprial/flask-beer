@@ -19,10 +19,11 @@ def index():
         css_url = url_for('static', filename='css/main.css')
         jquery_url = url_for('static', filename='js/jquery-1.10.2.min.js')
         beers_url = url_for('static', filename='js/beers.js')
+        highlight_url = url_for('static', filename='js/code.js')
         js_url = url_for('static', filename='js/main.js')
         return render_template('index.html', css_url=css_url,
                                jquery_url=jquery_url, beers_url=beers_url,
-                               js_url=js_url)
+                               js_url=js_url, highlight_url=highlight_url)
 
 if __name__ == '__main__':
     app.run(debug=True)
