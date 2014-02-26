@@ -8,7 +8,7 @@ app = Flask(__name__)
 @app.route('/', methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
-        yh = Yhat("j@yhathq.com", "073ce61a525ba770cbf8d831cd837f39",
+        yh = Yhat("YOUR_USERNAME", "YOUR_APIKEY",
                   "http://cloud.yhathq.com/")
         pred = yh.predict("BeerRec", {"beers": request.json['beers'],
                           "n": request.json['n']})
